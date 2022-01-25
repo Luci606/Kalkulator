@@ -57,6 +57,9 @@ code {
 }
 .bttn-equal{
   background: #9858b8;
+  width: 110px;
+  grid-column: 3 / 5;
+  grid-row: 5;
 }
 .bttn-equal:hover{
   background-color: #7b3f99;
