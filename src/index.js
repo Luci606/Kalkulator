@@ -1,60 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
-
-class Screen extends React.Component {
-
-  render(){
-    return (
-      <div id='screen'>0</div>
-    )
-  }
-}
-
-class CalculatorButton extends React.Component {
-
-  render(){
-    let buttonClass = 'bttn';
-    if(this.props.bttnValue === "="){
-      buttonClass += ' bttn-equal';
-    }
-
-    return (
-        <button className={buttonClass}>{this.props.bttnValue}</button>
-    )
-  }
-}
-
-class Calculator extends React.Component {
-
-  render(){
-    const bttnValues = [
-      "CE", "C", "%", "/",
-      7, 8, 9, "X",
-      4, 5, 6, "-",
-      1, 2, 3, "+",
-      "<", 0, ".", "="
-    ];
-    const buttonsMap = bttnValues.map((bttnValue) =>
-      <CalculatorButton bttnValue = {bttnValue} />
-    );
-
-    return (
-      <div className='calculator'>
-        <Screen />
-        <div className='buttonsContainer'>
-          {buttonsMap}
-        </div>
-      </div>
-    )
-  }
-}
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
