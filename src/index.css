@@ -34,14 +34,8 @@ code {
   font-size: 30px;
   text-align: right;
   box-sizing: border-box;
-  
 }
-.buttonsContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 5px;
-}
-.bttn{
+button{
   height: 50px;
   width: 50px;
   margin: 5px;
@@ -52,15 +46,20 @@ code {
   background: #1a1a1a;
   color:#FFF;
 }
-.bttn:hover{
+button:hover{
   background: #131313;
 }
-.bttn-equal{
+.equals{
   background: #9858b8;
   width: 110px;
   grid-column: 3 / 5;
   grid-row: 5;
 }
-.bttn-equal:hover{
+.equals:hover{
   background-color: #7b3f99;
+}
+.buttonsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px;
 }
