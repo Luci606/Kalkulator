@@ -96,10 +96,6 @@ const back = () => {
 //Wiktoria
 const calc = () => {
   setResult(eval(result).toString());
-  if (Infinity)
-  {
-    setResult("Nie dziel przez 0");
-  }
 }
 
 //Wspólnie
